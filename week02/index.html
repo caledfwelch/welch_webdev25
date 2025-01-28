@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HTML Forms</title>
+  </head>
+  <body>
+    <h1>HTML Form Elements</h1>
+    <p>
+      form action attribute usually contains link to file or location to process
+      form data.
+    </p>
+    <!-- <form
+      action="js/create-profile.js"
+      method="GET"
+      target="_self"
+      name="user-create"
+    ></form> -->
+    <p>
+      the name attribute for form elem = how scripts differentiate from other
+      forms. or what table in a database to write to.
+    </p>
+    <form name="user-create" method="GET">
+      <fieldset>
+        <legend>simple text inputs</legend>
+        <p>most basic text input. change input type w type attribute.</p>
+        <label for="first-name">first name</label>
+        <input name="first-name" type="text" placeholder="jane" />
+
+        <label for="last-name">last name</label>
+        <input
+          name="last-name"
+          type="text"
+          maxlength="10"
+          placeholder="doe"
+          required
+        />
+      </fieldset>
+      <fieldset>
+        <legend>common input types</legend>
+        <label for="age">age: </label>
+        <input name="age" type="number" step="1" max="130" min="0" />
+
+        <label for="password">password:</label>
+        <input type="password" name="password" />
+
+        <label for="color">color</label>
+        <input type="color" name="color" />
+      </fieldset>
+
+      <fieldset>
+        <legend>checkboxes</legend>
+        <p>
+          allow user to select >1 option/value for same field.
+          <em>each checkbox in same group has same name but diff values.</em>
+        </p>
+
+        <p>pet types</p>
+        <input name="pet" type="checkbox" value="dog" /><label>dog</label>
+        <input name="pet" type="checkbox" value="cat" /><label>cat</label>
+        <input name="pet" type="checkbox" value="rabbit" /><label>rabbit</label>
+        <input name="pet" type="checkbox" value="fish" /><label>fish</label>
+        <input name="pet" type="checkbox" value="frog" /><label>frog</label>
+      </fieldset>
+      <fieldset>
+        <legend>radio button</legend>
+        <p>
+          select only one option/value.
+          <em>same group, same name, diff values.</em>
+        </p>
+        <p>favorite pet</p>
+        <input name="favorite" type="radio" value="dog" /><label>dog</label>
+        <input name="favorite" type="radio" value="cat" /><label>cat</label>
+        <input name="favorite" type="radio" value="rabbit" /><label
+          >rabbit</label
+        >
+        <input name="favorite" type="radio" value="fish" /><label>fish</label>
+        <input name="favorite" type="radio" value="frog" /><label>frog</label>
+      </fieldset>
+
+      <p>text areas are for sentences/paragraph responses.</p>
+      <label for="question">enter question here:</label>
+      <textarea name="questions" cols="50" rows="5"></textarea>
+
+      <fieldset>
+        <legend>select option dropdown</legend>
+        <label for="state">pick a state</label>
+        <select name="state">
+          <optgroup label="new states">new states</optgroup>
+          <option value="ny">new york</option>
+          <option value="nj">new jersey</option>
+          <option value="nh">new hampshire</option>
+          <option value="nm">new mexico</option>
+        </select>
+      </fieldset>
+
+      <input type="button" value="submit" name="user-submit" disabled />
+      <button title="(better) submit button" name="submit-user">submit</button>
+    </form>
+  </body>
+</html>
