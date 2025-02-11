@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Intro to CSS Text and Spans</title>
+    <style type="text/CSS">
+      * {
+        /* universal selector */
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        /* tag selector; applies to every instance unless overwritten*/
+        background-color: #000;
+        color: white; /* text color */
+        font-family: "Courier New", Courier, monospace;
+      }
+      h1 {
+        font-family: Helvetica, Arial, sans-serif; /* if not helvetica, arial; if not arial, default browser sans-serif */
+        /* box properties one at a time */
+        margin-top: 24px;
+        /* or use 2 values: top/bottom, left/right */
+        margin: 2rem 1rem;
+        /* 4 values: top > right > bottom > left (clockwise) */
+        /* border: width, style, color */
+        border: 5px dashed purple;
+        border-width: 1px 2px 3px 4px;
+        border-radius: 10px;
+        /* padding = space btwn border (edge of box) and content */
+        padding: 1rem;
+      }
+      p {
+        font-size: 19px;
+        margin: 2.5rem 1rem;
+        line-height: 1.5;
+      }
+      /* class selector */
+      .fantasy-text {
+        font-family: fantasy;
+        color: purple;
+        text-transform: uppercase;
+        /* x offset, y offset, blur, color */
+        text-shadow: 5px 5px 8px aquamarine;
+      }
+      /* id selector; one unique element per html file */
+      #call-to-action {
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>intro to css</h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec convallis,
+      libero ut congue imperdiet, eros leo consectetur ipsum, ut elementum dui
+      turpis vitae turpis.
+    </p>
+    <p id="call-to-action">
+      Mauris maximus auctor purus ut vestibulum. Duis rutrum ac turpis in
+      tempor.
+    </p>
+    <p>
+      Aliquam id sagittis libero. Mauris lobortis eget ipsum ac ullamcorper.
+      Duis finibus, tortor ac aliquam rutrum, dui nisl iaculis ex, non sodales
+      lorem sapien vitae dolor.
+      <span class="fantasy-text"
+        >Aliquam erat volutpat. Nam lobortis condimentum turpis ac vehicula.
+        Integer nec elit ut ex hendrerit facilisis. Fusce nibh dui, tincidunt ac
+        aliquam et, faucibus id neque.</span
+      >
+      Integer aliquam felis et nisl sollicitudin, vel tempus justo feugiat.
+      Morbi rhoncus nec nunc et feugiat. Nullam dignissim elementum ante, at
+      auctor enim volutpat at. Donec pharetra semper iaculis. Cras vitae nunc
+      non metus mollis fermentum. Aliquam eu ex tortor. Morbi vel ultricies
+      ante. Fusce lacinia felis at cursus imperdiet.
+    </p>
+  </body>
+</html>

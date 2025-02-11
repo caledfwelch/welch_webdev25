@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- this specifies the character set encoding.
+     without this tag our fonts might not load properly -->
+    <meta charset="utf-8" />
+    <!-- the viewport tag sets the initial scale and ensures
+     proper responsive behavior -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- The title tag shows up in the browser tab and as the big blue link in search results -->
+    <title>HTML Boilerplate</title>
+    <style>
+      /* internal style sheet */
+      img{
+        width: 30%;
+      }
+      p{
+       color:lightseagreen 
+      }
+    </style>
+  </head>
+  <body>
+    <!-- everything infside the body tag shows up to the user unless
+     modified to not be visible with css -->
+
+    <!-- ONLY 1 H1 per page -->
+    <h1 id="top">Hello World!</h1>
+    <h2>heading 2</h2>
+    <h3>heading 3</h3>
+    <h4>heading 4</h4>
+    <h5>heading 5</h5>
+    <h6>heading 6</h6>
+    <!-- cmd + / -->
+    <hr />
+    <!-- page divider -->
+
+    <p>text <strong>lalalalalala</strong><br /><em>lalalalala</em></p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a
+      ultrices ipsum, at sollicitudin lectus. Ut dapibus fringilla urna eu
+      tempor. Aliquam posuere turpis in tortor commodo, eu iaculis enim aliquet.
+      Curabitur pretium, turpis vel pellentesque egestas, ex massa euismod
+      justo, et vehicula magna sapien in diam. Integer porttitor mi ut mauris
+      volutpat, a faucibus erat gravida. Morbi pretium cursus porttitor.
+      Curabitur vel sollicitudin ipsum, eu maximus elit. Duis sit amet sagittis
+      ex, quis vehicula elit. Cras posuere rhoncus tortor maximus volutpat. In
+      sed interdum erat. In velit lacus, ullamcorper vel sem ac, iaculis
+      bibendum quam. Fusce ullamcorper sagittis pulvinar. Vivamus et mauris non
+      justo gravida dapibus scelerisque sit amet leo.
+    </p>
+
+    <p>
+      Pellentesque eu ligula a dolor blandit fermentum. Suspendisse sed est id
+      velit iaculis volutpat. Aliquam erat volutpat. Integer lacinia at arcu sit
+      amet ornare. Praesent hendrerit sem sem, ut viverra velit accumsan ut.
+      Nunc at facilisis magna. Donec orci lectus, consequat vel justo ac,
+      eleifend pellentesque elit. Vivamus non sapien eu urna commodo rutrum eu
+      at risus.
+    </p>
+
+    <p>
+      Aliquam volutpat ac massa nec convallis. Interdum et malesuada fames ac
+      ante ipsum primis in faucibus. 
+      <span style="color: purple; font-size:20px">Vestibulum risus eros, convallis sit amet
+      aliquet nec, ornare nec nulla. Morbi tempus enim augue, eget semper risus
+      convallis vel. Etiam gravida tellus mi, at ultricies ligula sollicitudin
+      quis. Cras eu arcu et sem laoreet scelerisque.</span> 
+      Donec pretium semper tortor
+      vel imperdiet. Integer est ante, molestie sit amet ligula id, porta
+      sodales felis. Nunc rhoncus, tellus quis porta dapibus, lorem eros
+      venenatis felis, nec consectetur sem erat congue mi. Pellentesque
+      tristique ullamcorper interdum. Aenean egestas magna et mauris interdum
+      sodales. Duis faucibus, justo ac efficitur cursus, nulla neque maximus
+      enim, a pellentesque nunc erat eget nisl. Maecenas a dui mauris. Nullam id
+      purus lectus. Duis at risus nec odio cursus sodales.
+    </p>
+    <hr />
+    <h2>recipe</h2>
+    <!-- img sourced from elsewhere on web -->
+    <img
+      src="https://www.simplyrecipes.com/thmb/RU9G4s-w2Lq6pQ1zZqOA-MXqE78=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2019__04__Yeasted-Belgian-Waffles-LEAD-01-b378aa4362ee43d893796698834877c5.jpg"
+      alt="stack of belgian waffles"
+      width="300px"
+    />
+    <!-- sibling of html file -->
+    <img src="waffle.jpg" alt="stack of belgian waffles" style="width:10%"/> 
+    <!--                                                          ^ override -->
+    <!-- subfolder of same project -->
+    <img src="img/waffle.jpg" alt="stack of belgian waffles" width="300px" />
+    <p>paragraph describing my recipe</p>
+    <ul>
+      <li>1 cup pearl milling company complete pancake mix</li>
+      <li>1/2 cup milk</li>
+        <ol>
+          <li>whole milk preferred</li>
+        </ol>
+      </li>
+      <li>butter</li>
+      <li>powdered sugar</li>
+    </ul>
+
+    <ol>
+      <li>
+        turn on waffle iron and grease both sides with butter or non-stick
+        spray.
+      </li>
+      <li>
+        add the pancake mix to a bowl and add in milk incrementally until the
+        batter is slightly runny.
+      </li>
+      <li>
+        when the waffle iron is heated, add the mix and let cook until golden
+        brown.
+      </li>
+      <li>top the waffle with butter and powdered sugar and enjoy!</li>
+    </ol>
+
+    <!-- link to other page within project -->
+    <a href="about/index.html">about page</a>
+    <a href="#top">back to top</a>
+  </body>
+</html>

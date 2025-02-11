@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>recipe</title>
+
+    <style type="text/CSS">
+      * {
+        margin: 0;
+        padding: 0;
+        color: #1c348a;
+      }
+      html {
+        background-color: aliceblue;
+      }
+      body {
+        font-family: Helvetica, Arial, sans-serif;
+      }
+      nav#main-menu ul {
+        list-style-type: none;
+        overflow: hidden;
+        background-color: lightskyblue;
+        font-size: 0;
+      }
+      nav ul li {
+        display: inline-block;
+        font-size: 1rem;
+      }
+      nav ul li a {
+        display: block;
+        width: 150px;
+        text-align: center;
+        padding: 20px;
+        text-decoration: none;
+        color: cornflowerblue;
+      }
+      nav a:hover {
+        color: white;
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+      nav a.active {
+        color: dodgerblue;
+      }
+
+      aside {
+        position: relative;
+        list-style-type: none;
+        overflow: hidden;
+        text-align: right;
+        font-weight: bold;
+        line-height: 1.5;
+        right: 2%;
+      }
+
+      aside ul {
+        font-weight: normal;
+        list-style-type: none;
+        overflow: hidden;
+        text-align: right;
+        color: lightskyblue;
+      }
+      aside a:hover {
+        color: cornflowerblue;
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+      aside a.active {
+        color: cornflowerblue;
+      }
+
+      h1 {
+        position: absolute;
+        top: 10%;
+        left: 2%;
+      }
+
+      h2 {
+        position: relative;
+        left: 2%;
+      }
+
+      img {
+        position: relative;
+        left: 2%;
+        padding: 0px 0px 30px 0px;
+      }
+
+      .ingredients {
+        position: relative;
+        line-height: 1.2;
+        left: 4%;
+        list-style-type: disc;
+      }
+
+      .steps {
+        position: relative;
+        line-height: 1.2;
+        left: 4%;
+      }
+
+      footer {
+        list-style-type: none;
+        overflow: hidden;
+        font-size: 0;
+      }
+
+      footer ul li {
+        display: inline-block;
+        font-size: 1rem;
+      }
+
+      footer ul li a {
+        display: block;
+        width: 70px;
+        text-align: left;
+        padding: 10px;
+        text-decoration: none;
+        color: cornflowerblue;
+      }
+
+    </style>
+
+    <header>
+      <nav id="main-menu">
+        <ul>
+          <li><a href="#">recipe central: home</a></li>
+          <li><a href="#">all recipes a-z</a></li>
+          <li><a href="#">about</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- <aside>
+        <nav>
+            <ul>
+                <li>popular</li>
+                <li>breakfast</li>
+                <li>lunch/dinner</li>
+                <li>side dishes</li>
+                <li>dessert</li>
+                <li>drinks</li>
+            </ul>
+        </nav>
+    </aside> -->
+  </head>
+  <body>
+    <aside>other popular breakfast recipes
+      <ul>
+          <li><a href="#">buttermilk pancakes</a></buttermilk></li>
+          <li><a href="#">cereal cake pops</a></li>
+          <li><a href="#">challah french toast</a></li>
+          <li><a href="#">instant whipped coffee</a></li>
+      </ul>
+    </aside>
+
+    <h1>box mix belgian waffles</h1>
+
+    <img src="img/waffle.jpg" alt="a plate of belgian waffles topped with powdered sugar" width="300px"/>
+
+    <h2>how to make fresh, fluffy belgian waffles with a waffle iron.</h2>
+
+    <br>
+
+    <div class="ingredients">
+      <p>ingredients for one waffle:
+          <ul>
+              <li>1 cup pearl milling company buttermilk complete pancake mix</li>
+              <li>1/2 cup milk</li>
+              <li>butter</li>
+              <li>powdered sugar</li>
+          </ul>
+      </p>
+    </div>
+    
+    <br>
+
+    <div class="steps">
+      <p>steps:
+          <ol>
+              <li>
+                  turn on waffle iron and grease both sides with butter or non-stick
+                  spray.
+                </li>
+                <li>
+                  add the pancake mix to a bowl and add in milk incrementally until the
+                  batter is slightly runny.
+                </li>
+                <li>
+                  when the waffle iron is heated, add the mix and let cook until golden
+                  brown.
+                </li>
+                <li>top the waffle with butter and powdered sugar and enjoy!</li>
+          </ol>
+      </p>
+    </div>
+
+    <br>
+
+    <p>follow us on social media:</p>
+    <br>
+    <footer>
+      <ul>
+          <li><a href="#">tiktok</a></li>
+          <li><a href="#">twitter</a></li>
+          <li><a href="#">instagram</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>

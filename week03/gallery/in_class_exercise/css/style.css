@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+
+/* global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: black;
+    /* full sized, fixed center bg image */
+    background: url('../img/bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body {
+    /* default font fam, all descendent elems will have this font */
+    /* can be overriden further down */
+    font-family: "Style Script", serif;
+}
+
+/* tell images to take up full container width, then size container */
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* gallery styles */
+.container {
+    width: 900px;
+    margin: 100px auto;
+    /* when using inline block to stack elems, zero out font size on container elem */
+    font-size: 0;
+}
+
+.polaroid {
+    width: 260px;
+    margin: 20px;
+    display: inline-block;
+    /* when abs positioning elem inside elem, make sure parent elem
+    is positioned rel */
+    position: relative;
+}
+
+/* descendant selectors */
+.polaroid img {
+    /* border: width, style, color */
+    border: 10px solid #ddd;
+    border-bottom-width: 45px;
+}
+
+.polaroid p {
+    font-size: 1.5rem;
+    position: absolute;
+    bottom: 5px;
+    width: 260px;
+    text-align: center;
+    color: #222;
+}
