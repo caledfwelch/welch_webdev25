@@ -14,29 +14,72 @@
   </head>
 
   <body>
+    <header>
+      <h1>nyc gallery</h1>
+      <nav>
+        <ul>
+          <li><a href="#">scale</a></li>
+          <li><a href="#">skew</a></li>
+          <li><a href="#">rotate</a></li>
+          <li><a href="#">rotate3d</a></li>
+        </ul>
+      </nav>
+    </header>
+
     <div class="container">
-      <div class="polaroid">
-        <p>Brooklyn Pizza</p>
+      <!-- scale transforms -->
+      <div class="polaroid scaleUp">
+        <p>brooklyn pizza</p>
         <img src="img/bw/pizza.jpg" />
       </div>
-      <div class="polaroid">
-        <p>FDNY</p>
+      <div class="polaroid scaleX">
+        <p>fdny</p>
         <img src="img/bw/fdny.jpg" />
       </div>
-      <div class="polaroid">
-        <p>Skating in Central Park</p>
+      <div class="polaroid scaleY">
+        <p>skating in central park</p>
         <img src="img/bw/skating.jpg" />
       </div>
-      <div class="polaroid">
-        <p>Coney Island</p>
+
+      <!-- skew transforms -->
+      <div class="polaroid skewX">
+        <p>coney island</p>
         <img src="img/bw/tickets.jpg" />
       </div>
-      <div class="polaroid">
-        <p>Traffic...</p>
+      <div class="polaroid skewY">
+        <p>traffic...</p>
         <img src="img/bw/traffic.jpg" />
       </div>
-      <div class="polaroid">
-        <p>Chinese Food</p>
+      <div class="polaroid skewBoth">
+        <p>chinese food</p>
+        <img src="img/bw/chinese.jpg" />
+      </div>
+
+      <!-- rotate transforms -->
+      <div class="polaroid rotX">
+        <p>brooklyn pizza</p>
+        <img src="img/bw/pizza.jpg" />
+      </div>
+      <div class="polaroid rotY">
+        <p>fdny</p>
+        <img src="img/bw/fdny.jpg" />
+      </div>
+      <div class="polaroid rotZ">
+        <p>skating in central park</p>
+        <img src="img/bw/skating.jpg" />
+      </div>
+
+      <!-- transforms w transitions -->
+      <div class="polaroid rotLeft colorSwap">
+        <p>coney island</p>
+        <img src="img/color/tickets.jpg" />
+      </div>
+      <div class="polaroid skewHover">
+        <p>traffic...</p>
+        <img src="img/bw/traffic.jpg" />
+      </div>
+      <div class="polaroid scaleHover">
+        <p>chinese food</p>
         <img src="img/bw/chinese.jpg" />
       </div>
     </div>

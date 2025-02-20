@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Flexbox Layouts</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <h2>default flexbox</h2>
+    <div class="container">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+    </div>
+
+    <h2>justify start, align start</h2>
+    <div class="container justify-start align-start">
+      <div class="item center">1</div>
+      <div class="item center">2</div>
+      <div class="item center">3</div>
+      <div class="item center">4</div>
+    </div>
+
+    <h2>justify end, align end</h2>
+    <div class="container justify-end align-end">
+      <div class="item center">1</div>
+      <div class="item center">2</div>
+      <div class="item center">3</div>
+      <div class="item center">4</div>
+    </div>
+
+    <h2>justify between, align center</h2>
+    <div class="container justify-between align-center">
+      <div class="item center">1</div>
+      <div class="item center">2</div>
+      <div class="item center">3</div>
+      <div class="item center">4</div>
+    </div>
+
+    <h2>justify around, align center</h2>
+    <div class="container justify-around align-center">
+      <div class="item center">1</div>
+      <div class="item center">2</div>
+      <div class="item center">3</div>
+      <div class="item center">4</div>
+    </div>
+
+    <h2>justify even, align center, align self</h2>
+    <div class="container justify-even align-center">
+      <div class="item center self-start">self-start</div>
+      <div class="item center self-end">self-end</div>
+      <div class="item center self-center">self-center</div>
+      <div class="item center self-stretch">self-stretch</div>
+    </div>
+
+    <!-- comment header/footer/sidebar/grid main content layout -->
+
+    <header>
+      <h2>logo/nav here</h2>
+    </header>
+    <div class="wrapper">
+      <main class="grid-container">
+        <div class="grid-item">
+          <img src="https://placecats.com/301/300" alt="wee cat" />
+        </div>
+        <div class="grid-item">
+          <img src="https://placecats.com/301/300" alt="wee cat" />
+        </div>
+        <div class="grid-item">
+          <img src="https://placecats.com/301/300" alt="wee cat" />
+        </div>
+        <div class="grid-item">
+          <img src="https://placecats.com/301/300" alt="wee cat" />
+        </div>
+        <div class="grid-item">
+          <img src="https://placecats.com/301/300" alt="wee cat" />
+        </div>
+        <div class="grid-item">
+          <img src="https://placecats.com/301/300" alt="wee cat" />
+        </div>
+        <div class="grid-item">
+          <img src="https://placecats.com/301/300" alt="wee cat" />
+        </div>
+        <div class="grid-item">
+          <img src="https://placecats.com/301/300" alt="wee cat" />
+        </div>
+      </main>
+      <aside class="secondary-nav">
+        <h2>secondary nav sidebar</h2>
+        <ul class="menu">
+          <li><a href="#">link 1</a></li>
+          <li><a href="#">link 2</a></li>
+          <li><a href="#">link 3</a></li>
+          <li><a href="#">link 4</a></li>
+        </ul>
+      </aside>
+    </div>
+    <footer>
+      <h2>social media links lalalala</h2>
+    </footer>
+  </body>
+</html>
