@@ -1,0 +1,143 @@
+/* global styles */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+img {
+    width: 100%; /* of box its in */
+    height: auto;
+}
+
+/* desktop first */
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('../img/geometric-leaves.webp');
+    padding: 0 2rem;
+    position: relative;
+}
+
+.brand {
+    margin: 0;
+    font-weight: 100;
+}
+
+header a {
+    color: #aaa;
+    text-decoration: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.menu li {
+    min-width: 5rem;
+}
+
+.menu li a {
+    display: block;
+    padding: 1rem;
+}
+
+.menu li a:hover {
+    color: #eee;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.container {
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.thumb {
+    width: 23%;
+    margin: 1rem auto;
+}
+
+
+/* tablet */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+        background-color: mediumaquamarine;
+    }
+
+    .thumb {
+        width: 45%;
+    }
+}
+
+/* phone */
+@media screen and (max-width: 768px) {
+    body {
+        background-color: indigo;
+    }
+
+    header {
+        flex-direction: column;
+        justify-content: right;
+        align-items: stretch;
+        padding: 0; /* zero out */
+    }
+
+    .brand {
+        margin: 0.5 rem;
+    }
+
+    .mobile-menu {
+        display: block;
+        position: absolute;
+        top: 0.5rem;
+        right: 1rem;
+        color: #aaa;
+        font-size: 2.5rem;
+        cursor: pointer;
+    }
+
+    .menu {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menu li {
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+        text-align: right;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .thumb {
+        width: 100%;
+    }
+
+    nav {
+        display: none;
+    }
+
+    /* toggle via js */
+    .show {
+        display: block;
+    }
+}

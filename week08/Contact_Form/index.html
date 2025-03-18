@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>contact me</title>
+    <style type="text/css">
+      @import url("https://fonts.googleapis.com/css2?family=Space+Mono&family=Style+Script&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+
+      :root {
+        --c-bg: #e3e8f0;
+        --c-text: #475569;
+        --c-bg-btn: #1e293b;
+        --c-btn-hover: #64748b;
+        --c-btn-text: #f8fafc;
+        --ff-body: "Space Mono", monospace;
+        --ff-header: "Staatliches", sans-serif;
+      }
+
+      /* base styles */
+      .container {
+        width: 50%;
+        border-radius: 1rem;
+        padding: 2rem;
+        margin: 0 auto;
+        font-family: Helvetica, Arial, sans-serif;
+        font-weight: 200;
+        color: var(--c-text);
+        background-color: var(--c-bg);
+      }
+
+      .row {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+      }
+
+      .label-lg {
+        font-size: 2rem;
+      }
+
+      .input-lg {
+        padding: 0.5rem;
+        border-radius: 0.25rem;
+        border: 1px solid grey;
+        margin-right: 3rem;
+      }
+
+      .message-area {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+        font-size: 2rem;
+      }
+
+      .message {
+        height: 16rem;
+        border: 1px solid grey;
+        border-radius: 0.25rem;
+        padding: 1rem;
+      }
+
+      .btn-bar {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: row-reverse;
+      }
+
+      .btn-dark {
+        width: 100%;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        font-size: 2rem;
+        background-color: var(--c-bg-btn);
+        color: var(--c-btn-text);
+      }
+
+      .btn-dark:hover {
+        background-color: var(--c-btn-hover);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>get in touch</h1>
+      <form action="https://formspree.io/f/mpwpzjbd" method="POST">
+        <div class="row">
+          <label for="name" class="label-lg">name: </label>
+          <input type="text" name="name" required class="input-lg" />
+
+          <label for="email" class="label-lg">email: </label>
+          <input type="email" name="email" required class="input-lg" />
+        </div>
+
+        <div class="message-area">
+          <label for="message" class="label-lg">send a message: </label>
+          <textarea name="message" required class="message"></textarea>
+        </div>
+
+        <div class="btn-dark">
+          <button type="submit">submit</button>
+        </div>
+
+        <!-- evil hidden input to store message subject -->
+        <input
+          name="subject"
+          type="hidden"
+          value="new submission from {{name}}"
+        />
+      </form>
+    </div>
+  </body>
+</html>

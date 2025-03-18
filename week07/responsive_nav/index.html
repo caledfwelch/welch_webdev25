@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Responsive Layout W/ Nav Toggle</title>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+    <script type="text/javascript">
+      // wait for DOM content to load
+      // add event listener for click event on menu
+      // toggle .show class on nav tag
+      document.addEventListener("DOMContentLoad", function () {
+        const clickMenu = document.getElementById("clickMenu");
+        clickMenu.addEventListener("click", toggleMenu);
+      });
+
+      function toggleMenu() {
+        const navbar = document.getElementById("main-nav");
+        navbar.classList.toggle("show");
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1 class="brand"><a href="#">logo</a></h1>
+      <!-- html entity, special chars -->
+      <!-- hide on desktop, show on mobile, abs positioned, 
+       clickable via js to hide/show main nav -->
+      <span class="mobile-menu" id="clickMenu">&#8801;</span>
+      <nav id="main-nav">
+        <ul class="menu">
+          <li><a href="#">link 1</a></li>
+          <li><a href="#">link 2</a></li>
+          <li><a href="#">link 3</a></li>
+          <li><a href="#">link 4</a></li>
+          <li><a href="#">link 5</a></li>
+          <li><a href="#">link 6</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <div class="thumb">
+        <img src="./img/venus-fly-trap.webp" alt="venus fly trap" />
+      </div>
+
+      <div class="thumb">
+        <img src="./img/venus-fly-trap.webp" alt="venus fly trap" />
+      </div>
+
+      <div class="thumb">
+        <img src="./img/venus-fly-trap.webp" alt="venus fly trap" />
+      </div>
+
+      <div class="thumb">
+        <img src="./img/venus-fly-trap.webp" alt="venus fly trap" />
+      </div>
+
+      <div class="thumb">
+        <img src="./img/venus-fly-trap.webp" alt="venus fly trap" />
+      </div>
+
+      <div class="thumb">
+        <img src="./img/venus-fly-trap.webp" alt="venus fly trap" />
+      </div>
+
+      <div class="thumb">
+        <img src="./img/venus-fly-trap.webp" alt="venus fly trap" />
+      </div>
+
+      <div class="thumb">
+        <img src="./img/venus-fly-trap.webp" alt="venus fly trap" />
+      </div>
+    </main>
+  </body>
+</html>
