@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>gorillaz song recommender</title>
+    <style>
+      @font-face {
+        font-family: "Plastic Beach";
+        src: url("./font/plastic_beach.ttf") format("truetype");
+      }
+
+      body {
+        font-family: "Helvetica", sans-serif;
+        background-color: #111;
+        color: #eee;
+        display: flex;
+        justify-content: center;
+        padding: 40px;
+      }
+
+      .container {
+        background-color: #222;
+        padding: 30px;
+        border-radius: 12px;
+        max-width: 450px;
+        width: 100%;
+      }
+
+      h1,
+      button,
+      .results h2 {
+        font-family: "Plastic Beach", sans-serif;
+      }
+
+      h1 {
+        color: #0ec78f;
+        text-align: center;
+      }
+
+      select,
+      button {
+        width: 100%;
+        padding: 12px;
+        margin-top: 20px;
+        font-size: 16px;
+        border-radius: 6px;
+        border: none;
+      }
+
+      select {
+        background-color: #333;
+        color: #eee;
+      }
+
+      button {
+        background-color: #0ec78f;
+        color: #000;
+        cursor: pointer;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+      }
+
+      button:hover {
+        background-color: #109e7d;
+      }
+
+      .results {
+        margin-top: 30px;
+        background-color: #333;
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      .results h2 {
+        margin-top: 0;
+        color: #0ec78f;
+      }
+
+      ul {
+        padding-left: 20px;
+      }
+
+      li {
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>gorillaz song recommender</h1>
+      <select id="moodSelect">
+        <option value="" disabled selected>what are you feeling today?</option>
+        <option value="dance">i feel like dancing</option>
+        <option value="sleep">i feel sleepy</option>
+        <option value="drive">
+          i feel like going on a long drive at night
+        </option>
+        <option value="good">i feel good!!!!!!</option>
+      </select>
+      <button id="recommendBtn">show me tracks</button>
+
+      <div class="results" id="songResults"></div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document
+          .getElementById("recommendBtn")
+          .addEventListener("click", showSongs);
+      });
+
+      const gorillazTracks = {
+        dance: [
+          "“Rock the House” – Gorillaz",
+          "“DARE” – Demon Days",
+          "“Glitter Freeze” – Plastic Beach",
+          "“New Gold” – Cracker Island",
+          "“Dirty Harry” – Demon Days",
+        ],
+        sleep: [
+          "“Busted and Blue” – Humanz",
+          "“Souk Eye” – The Now Now",
+          "“Hong Kong” – D-Sides",
+          "“On Melancholy Hill” – Plastic Beach",
+          "“To Binge” – Plastic Beach",
+        ],
+        drive: [
+          "“Andromeda” – Humanz",
+          "“Tranz” – The Now Now",
+          "“Saturnz Barz” – Humanz",
+          "“Empire Ants” – Plastic Beach",
+          "“Stylo” – Plastic Beach",
+        ],
+        good: ["“Feel Good Inc.” – Demon Days"],
+      };
+
+      function showSongs(event) {
+        event.preventDefault();
+        const mood = document.getElementById("moodSelect").value;
+        const resultDiv = document.getElementById("songResults");
+        resultDiv.innerHTML = "";
+
+        if (!mood) {
+          resultDiv.innerHTML = `<p>choose a feeling first!</p>`;
+          return;
+        }
+
+        const list = gorillazTracks[mood];
+        const randomIndex = Math.floor(Math.random() * list.length);
+        const song = list[randomIndex];
+
+        resultDiv.innerHTML = `
+        <h2>a gorillaz song for your mood:</h2>
+        <p>${song}</p>
+    `;
+      }
+    </script>
+  </body>
+</html>
