@@ -1,0 +1,558 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Style+Script&display=swap');
+  
+/* global styles */
+* {
+    box-sizing: border-box;
+    background-color: black;
+    cursor: none;
+}
+
+body {
+    margin: 0;
+    font-family: 'Space Mono', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+} 
+
+#starfield {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 0;
+    mix-blend-mode: screen;
+    background: transparent !important;
+  }  
+
+.break {
+    height: 15vh;
+}
+
+/* menu/top styles */
+.desktop-img {
+    width: 100%;
+    height: 92vh; /* make smllaler */
+}
+
+.tablet-img {
+    display: none;
+}
+
+.mobile-img {
+    display: none;
+}
+
+#main-nav {
+    position: relative;
+    background-color: black;
+    padding: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+#contact-form form {
+    max-width: 500px;
+    margin: 2rem auto;
+    text-align: center;
+    font-size: 16px;
+  }
+  
+  #contact-form input,
+  #contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    font-family: 'Space Mono', monospace;
+    background-color: #111;
+    color: white;
+    border: 1px solid #444;
+    border-radius: 5px;
+    margin-top: 0.25rem;
+    margin-bottom: 1rem;
+  }
+  
+  #contact-form button {
+    padding: 0.5rem 1rem;
+    background-color: mediumspringgreen;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  #contact-form button:hover {
+    background-color: #9aab1a;
+  }
+
+/* sticky styles */
+#main-nav.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.menu li {
+    min-width: 5rem;
+    padding: 1rem;
+    color: white;
+}
+
+.menu li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+
+/* project 1 styles */
+#in-between1 {
+    height: 30vh;
+    background-image: linear-gradient(180deg, #000 0%, #096158 100%);
+}
+
+#p1 {
+    background-color: #096158;
+    height: 120vh;
+    padding-top: 5%;
+}
+
+#p1 p {
+    background-color: #096158;
+}
+
+#p1 img {
+    width: 50%;
+    height: auto;
+}
+
+#p1 .break {
+    background-color: #096158;
+}
+
+
+/* project 2 styles */
+#in-between2 {
+    height: 30vh;
+    background-image: linear-gradient(180deg, #096158 0%, #054e61 100%);
+}
+
+#p2 {
+    background-color: #054e61;
+    height: 120vh;
+    padding-top: 5%;
+}
+
+#p2 p {
+    background-color: #054e61;
+}
+
+#p2 img {
+    width: 50%;
+    height: auto;
+}
+
+#p2 .break {
+    background-color: #054e61;
+}
+
+
+/* project 3 styles */
+#in-between3 {
+    height: 30vh;
+    background-image: linear-gradient(180deg, #054e61 0%, #0b2336 100%);
+}
+
+#p3 {
+    background-color: #0b2336;
+    height: 120vh;
+    padding-top: 5%;
+}
+
+#p3 p {
+    background-color: #0b2336;
+}
+
+#p3 img {
+    width: 80%;
+    height: auto;
+}
+
+#p3 .break {
+    background-color: #0b2336;
+}
+
+
+
+/* project 4 styles */
+#in-between4 {
+    height: 30vh;
+    background-image: linear-gradient(180deg, #0b2336 0%, #0a0c24 100%);
+}
+
+#p4 {
+    background-color: #0a0c24;
+    height: 120vh;
+    padding-top: 5%;
+}
+
+#p4 p {
+    background-color: #0a0c24;
+}
+
+#p4 img {
+    width: 50%;
+    height: auto;
+}
+
+#p4 .break {
+    background-color: #0a0c24;
+}
+
+
+
+/* project 5 styles */
+#in-between5 {
+    height: 30vh;
+    background-image: linear-gradient(180deg, #0a0c24 0%, #15031c 100%);
+}
+
+#p5 {
+    background-color: #15031c;
+    height: 120vh;
+    padding-top: 5%;
+}
+
+#p5 p {
+    background-color: #15031c;
+}
+
+#p5 img {
+    width: 50%;
+    height: auto;
+}
+
+#p5 .break {
+    background-color: #15031c;
+}
+
+
+/* social media styles */
+#in-between6 {
+    height: 30vh;
+    background-image: linear-gradient(180deg, #15031c 0%, #000 100%);
+}
+
+#social {
+    background-color: #000;
+    min-height: 120vh;
+    padding-top: 5%;
+}
+
+#social p {
+    background-color: #000;
+}
+
+#social img {
+    width: 40%;
+    height: auto;
+}
+
+#social .break {
+    background-color: #000;
+}
+
+
+#spin-the-bottle img {
+    width: 30%;
+    height: auto;
+}
+
+#prairie-princess-post img {
+    width: 30%;
+    height: auto;
+}
+
+
+/* contact styles */
+#contact {
+    line-height: 1;
+    color: white;
+}
+
+#contact a {
+    color: white;
+}
+
+#contact a:hover {
+    color: #9aab1a;
+}
+
+#contact .break {
+    background-color: #000;
+}
+
+/* desktop menu hover effects */
+@media screen and (min-width: 1025px) {
+    .menu li a {
+        transition: all 0.2s ease-in-out;
+    }
+
+    .menu li a:hover {
+        color: mediumspringgreen;
+        font-size: 1.3rem;
+    }
+}
+
+
+/* tablet */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .desktop-img {
+        display: none;
+    }
+    
+    .tablet-img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    
+    .mobile-img {
+        display: none;
+    }
+
+    /* adjust nav bar text */
+    .menu li {
+        font-size: 16px;
+        position: relative;
+        white-space: nowrap;
+    }
+
+    /* replace text with shortened versions using ::before */
+    .menu li:nth-child(2) a::before {
+        content: "p1";
+    }
+    .menu li:nth-child(3) a::before {
+        content: "p2";
+    }
+    .menu li:nth-child(4) a::before {
+        content: "p3";
+    }
+    .menu li:nth-child(5) a::before {
+        content: "p4";
+    }
+    .menu li:nth-child(6) a::before {
+        content: "p5";
+    }
+    .menu li:nth-child(7) a::before {
+        content: "social";
+    }
+    .menu li:nth-child(8) a::before {
+        content: "contact";
+    }
+
+    /* hide original text */
+    .menu li a {
+        font-size: 0;
+    }
+
+    /* add full text */
+    .menu li:nth-child(2) a::after {
+        content: "project 1";
+    }
+    .menu li:nth-child(3) a::after {
+        content: "project 2";
+    }
+    .menu li:nth-child(4) a::after {
+        content: "project 3";
+    }
+    .menu li:nth-child(5) a::after {
+        content: "project 4";
+    }
+    .menu li:nth-child(6) a::after {
+        content: "project 5";
+    }
+    .menu li:nth-child(7) a::after {
+        content: "social media branding";
+        white-space: normal;
+    }
+    .menu li:nth-child(8) a::after {
+        content: "contact";
+    }
+
+    /* style pseudo-elements */
+    .menu li a::before {
+        font-size: 16px;
+        color: white;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: all 0.2s ease-in-out;
+    }
+
+    .menu li a::after {
+        font-size: 12px;
+        color: mediumspringgreen;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: all 0.2s ease-in-out;
+    }
+
+    /* hide ::after by default */
+    .menu li a::after {
+        opacity: 0;
+        transform: translateX(-50%) scale(0);
+    }
+
+    /* full text on hover */
+    .menu li a:hover::before {
+        opacity: 0;
+        transform: translateX(-50%) scale(0);
+    }
+
+    .menu li a:hover::after {
+        opacity: 1;
+        transform: translateX(-50%) scale(1.3);
+    }
+
+    #p1 img,
+    #p2 img,
+    #p4 img,
+    #p5 img {
+        width: calc(50% * 1.2); /* resize images */
+    }
+
+    #p3 img {
+        width: calc(80% * 1.1);
+    }
+
+    #social img {
+        width: calc(40% * 1.2);
+    }
+
+    #spin-the-bottle img,
+    #prairie-princess-post img {
+        width: calc(30% * 1.8);
+    }
+}
+
+
+/* phone */
+@media screen and (max-width: 768px) {
+    .desktop-img {
+        display: none;
+    }
+    
+    .tablet-img {
+        display: none;
+    }
+    
+    .mobile-img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    #main-nav {
+        padding: 2rem 0;
+    }
+
+    /* adjust nav bar text to fit on 2 lines */
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+    }
+    
+    .menu li {
+        font-size: 16px;
+        position: relative;
+        white-space: nowrap;
+        padding: 0.25rem;
+        margin: 0;
+        flex: 0 0 auto;
+    }
+
+    /* replace text w shortened versions */
+    .menu li:nth-child(2) a::before {
+        content: "p1";
+    }
+    .menu li:nth-child(3) a::before {
+        content: "p2";
+    }
+    .menu li:nth-child(4) a::before {
+        content: "p3";
+    }
+    .menu li:nth-child(5) a::before {
+        content: "p4";
+    }
+    .menu li:nth-child(6) a::before {
+        content: "p5";
+    }
+    .menu li:nth-child(7) a::before {
+        content: "social";
+    }
+    .menu li:nth-child(8) a::before {
+        content: "contact";
+    }
+
+    /* hide original text */
+    .menu li a {
+        font-size: 0;
+    }
+
+    /* style pseudo-elements */
+    .menu li a::before {
+        font-size: 16px;
+        color: white;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: all 0.2s ease-in-out;
+    }
+
+    .menu li a:hover::before {
+        color: mediumspringgreen;
+        font-size: 1.2rem;
+    }
+
+    .menu li:nth-child(n+7) {
+        flex-basis: 33%; /* make "social" and "contact" take up 1/3 the width of bottom row (at small enough screens "p5" overflows to second row) */
+        text-align: center;
+        margin-top: 0.5rem;
+    }
+
+    #p1 img,
+    #p2 img,
+    #p4 img,
+    #p5 img {
+        width: calc(50% * 1.4); /* resize images again */
+    }
+
+    #p3 img {
+        width: calc(80% * 1.1);
+    }
+
+    #social img {
+        width: calc(40% * 1.4);
+    }
+
+    #spin-the-bottle img,
+    #prairie-princess-post img {
+        width: calc(30% * 1.9);
+    }
+}
